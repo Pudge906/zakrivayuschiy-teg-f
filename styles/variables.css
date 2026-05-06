@@ -1,1 +1,39 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --font-family-standard: "Press Start 2P", fantasy;
+  --font-family-variable: "Inter", sans-serif;
+  --themes-mainColor: rgba(0, 0, 0, 1);
+  --button-color: rgb(255, 255, 255, 1);
+  --themes-background: rgb(255, 255, 255, 1);
+  --inline-size: clamp(375px, 48.7vw, 700px);
+  --header-height: clamp(327px, 38.4vh, 368px);
+  --contour-color: rgba(0, 0, 0, 1);
+  --sparks-color: rgba(255, 0, 0, 1);
+  --main-body-color: transparent;
+  --core-color: transparent;
+  --save-button-width: 335px;
+  --save-button-height: 55px;
+  --page-gradient:
+    repeating-linear-gradient(
+      90deg,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(
+      to bottom,
+      #e7e7e7 0.01%,
+      #1a1a1a 100%
+    );
+}
+
+@media (width <= 375px) {
+  .save-button {
+    --save-button-width: 306px;
+    --save-button-height: 84px;
+  }
+}
